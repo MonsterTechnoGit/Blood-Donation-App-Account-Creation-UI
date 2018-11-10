@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--We add all the layout in ths one and add animation to show them-->
+    <!--This is for first page -->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Welcome"
+            android:layout_marginStart="10dp"
+            android:textColor="#1b1b1b"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:text="This is a platform for asking for help and also providing blood donation assistance"
+            android:textSize="17sp"
+            android:textColor="#606060"
+            android:layout_marginStart="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/signin"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:fontFamily="@font/cantora_one"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:background="@drawable/login_button_background"
+                android:textColor="#FFCE4310"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"/>
+            <Button
+                android:id="@+id/create_account"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:textSize="17sp"
+                android:fontFamily="@font/cantora_one"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/create_account_background"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--this is second layout-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Create account"
+            android:layout_marginStart="10dp"
+            android:textColor="#1b1b1b"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:text="Please enter your mobile number"
+            android:textSize="17sp"
+            android:textColor="#606060"
+            android:layout_marginStart="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <EditText
+                android:id="@+id/edittext_phone"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Number"
+                android:background="@drawable/edittext_background"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/cantora_one"/>
+            <ImageButton
+                android:id="@+id/input_phoneNumber"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/next_button_background"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <!--This is fourth layout-->
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fourth_layout"
+        android:gravity="bottom"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Verify"
+            android:layout_marginStart="10dp"
+            android:textColor="#1b1b1b"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:text="Please enter the verification code that you recived on your number bellow"
+            android:textSize="17sp"
+            android:textColor="#606060"
+            android:layout_marginStart="10dp"/>
+        <TextView
+            android:id="@+id/userPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:text="+91 8372890302"
+            android:textSize="17sp"
+            android:textColor="#606060"
+            android:layout_marginStart="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+            <EditText
+                android:id="@+id/verifiednumber"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter Code"
+                android:background="@drawable/edittext_background"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/cantora_one"/>
+            <ImageButton
+                android:id="@+id/verified_next"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/next_button_background"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--This is five layout-->
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/five_layout"
+        android:gravity="bottom"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Your Name"
+            android:layout_marginStart="10dp"
+            android:textColor="#1b1b1b"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:text="Enter your Good name bellow"
+            android:textSize="17sp"
+            android:textColor="#606060"
+            android:layout_marginStart="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical">
+            <EditText
+                android:id="@+id/userName"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter name"
+                android:background="@drawable/edittext_background"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/cantora_one"/>
+            <ImageButton
+                android:id="@+id/usernamenext"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_arrow_forward_black_24dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/next_button_background"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--This is sixth layout-->
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sixth_layout"
+        android:gravity="bottom"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baloo"
+            android:text="Choose Blood Type"
+            android:layout_marginStart="10dp"
+            android:textColor="#1b1b1b"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:text="Please choose your blood type, when someone near you needs a darsh group that matches your blood type, we will send a notification"
+            android:textSize="17sp"
+            android:textColor="#606060"
+            android:layout_marginStart="10dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/groupA"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="@drawable/blood_group_button_background"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="A"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/cantora_one"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/groupB"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="@drawable/blood_group_button_background"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="B"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/cantora_one"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/groupAB"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="@drawable/blood_group_button_background"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="AB"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/cantora_one"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/groupO"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:background="@drawable/blood_group_button_background"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="O"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/cantora_one"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/groupContinue"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/create_account_background"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="CONTINUE"
+            android:fontFamily="@font/cantora_one"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+    <!--This is seventh layout-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/seventh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:gravity="bottom">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/image"
+            android:layout_marginStart="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Hi, "
+                android:layout_marginStart="10dp"
+                android:textColor="#1b1b1b"
+                android:textSize="35sp" />
+            <TextView
+                android:id="@+id/userNameFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Name"
+                android:layout_marginStart="10dp"
+                android:textColor="#1b1b1b"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/cantora_one"
+            android:text="To request blood donor assistance, press the button below"
+            android:textSize="17sp"
+            android:textColor="#606060"
+            android:layout_marginStart="10dp"/>
+
+        <Button
+            android:id="@+id/request"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/create_account_background"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Request"
+            android:fontFamily="@font/cantora_one"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
